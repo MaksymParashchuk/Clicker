@@ -1,4 +1,129 @@
+.main-logo-company__new {
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}   
+
 .main-logo-company__subtitle {
+    font-size: 15px;
+    margin: auto;
+    max-width: 1200px;
+    padding-left: 7.5px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+.main-logo-company__subtitle {
+     padding-left: 15px;
+    }
+}
+
+.main-logo-company__title {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: auto;
+    max-width: 1200px;
+    padding-left: 7.5px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 320px) {
+    .main-logo-company__title {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-logo-company__title {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-logo-company__title {
+        font-size: 38px;
+        padding-left: 15px;
+    }
+}
+
+.image-button {
+    width: 100%;
+    padding: 7.5px;
+    box-sizing: border-box;
+}
+
+.image-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 990px) {
+    .image-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+/* .main-logo-company__new {
+    padding: 12px;
+    width: 100%;
+    box-sizing: content-box;
+    
+}
+
+.main-logo-company__subtitle {
+    font-size: 15px;
+}
+
+.main-logo-company__title {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+@media (min-width: 320px) {
+    .main-logo-company__title {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-logo-company__title {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-logo-company__title {
+        font-size: 42px;
+
+
+    }
+}
+.image-button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7.5px;
+}
+
+.image-container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+@media (min-width: 990px) {
+    .image-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+} */
+
+/* .main-logo-company__subtitle {
     font-size: 15px;
     text-align: left;
     margin: auto;
@@ -8,13 +133,8 @@
 
 @media (min-width: 320px) {
     .main-logo-company__subtitle {
-        font-size: 15px;
-        text-align: left;
-        margin: auto;
         width: 100%;
         max-width: 1200px;
-        box-sizing: border-box;
-        padding-left: 12px;
     }
 }
 
@@ -90,86 +210,4 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin: auto;
     }
-}
-
-
-
-/* .main-logo-company__subtitle {
-    font-size: 15px;
-    text-align: left;
-    max-width: 1200px;
-    margin: auto;
-    padding: 75px 0px 15px;
-} 
-
-@media {
-    .main-logo-company__subtitle {
-        font-size: 15px;
-        text-align: left;
-        min-width: 320px;
-        margin: auto;
-        padding-left: 30px;
-    }
-} 
-
-.main-logo-company__title {
-    font-size: 42px;
-    font-weight: bold;
-    text-align: left;
-    margin: auto;
-} 
-
-@media { .main-logo-company__title {
-        font-size: inherit;
-        font-weight: bold;
-        text-align: left;
-        margin: auto;
-        padding: 0;
-        border: 0;
-        width: 100%;
-        vertical-align: baseline;
-        box-sizing: border-box;
-        text-align: left;
-    }
-} 
-
- .image-container-item {
-    aspect-ratio: 2 / 1;
-     width: 100%;
-     margin: auto;
-     position: relative;
- }
-
- .image-button {
-    width: 100%;
-    margin: auto;
-    position: relative;
-
- }
-
-
- @media (min-width: 320px) {
-     .image-container-item {
-         width: 256px;
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-     }
- }
-
- @media (min-width: 760px) {
-     .image-container-item {
-        width: 670px;
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-     }
- }
-
- @media (min-width: 990px) {
-     .image-container-item {
-        width: 570px;
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-     }
- }
-
-  */
+} */
