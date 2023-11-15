@@ -63,6 +63,7 @@
 @media (min-width: 990px) {
     .image-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+
     }
 }
 
