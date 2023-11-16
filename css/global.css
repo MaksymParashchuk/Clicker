@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-  font-family: Robo, sans-serif;
-  background-image: url(/img/baground.jpg);
+  font-family: Roboto, sans-serif;
+  background-image: url(/img/background.jpg);
   color: white;
 }
-
