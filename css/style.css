@@ -5,17 +5,14 @@ body {
             height: 100vh;
             margin: 0;
             background-image: url(../img/baground.jpg);
-            /* background-image: url(./img/baground.jpg); */
-            /* background-image: url(/img/baground.jpg); */
-            /* background-image: url("./img/baground.jpg"); */
-            /* background-image: url("../img/baground.jpg");
-            background-image: url("/img/baground.jpg"); */
         }
+
         button {
             padding: 25px;
             font-size: 30px;
             cursor: pointer;
         }
+
         #timer {
             position: fixed;
             top: 10px;
@@ -23,6 +20,7 @@ body {
             font-size: 30px;
             color: white;
         }
+
         #restartButton {
             position: fixed;
             bottom: 10px;
@@ -31,6 +29,7 @@ body {
             font-size: 20px;
             cursor: pointer;
         }
+
         #history {
             position: fixed;
             bottom: 10px;
