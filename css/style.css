@@ -8,8 +8,8 @@ body {
             background-image: url(./img/baground.jpg);
             background-image: url(/img/baground.jpg);
             background-image: url("./img/baground.jpg");
-            background-image: url("../img/baground.jpg");
-            background-image: url("/img/baground.jpg");
+            /* background-image: url("../img/baground.jpg");
+            background-image: url("/img/baground.jpg"); */
         }
         button {
             padding: 25px;
