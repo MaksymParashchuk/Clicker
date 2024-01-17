@@ -5,6 +5,11 @@ body {
             height: 100vh;
             margin: 0;
             background-image: url(../img/baground.jpg);
+            background-image: url(./img/baground.jpg);
+            background-image: url(/img/baground.jpg);
+            background-image: url("./img/baground.jpg");
+            background-image: url("../img/baground.jpg");
+            background-image: url("/img/baground.jpg");
         }
         button {
             padding: 25px;
