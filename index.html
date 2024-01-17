@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/main.logo.css">
+    <title>Clicker Game</title>
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <section data-include="main.section.logo.company.partial.html"></section>
-<script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <button onclick="handleClick()">Click me: <span id="clickCount">0</span></button>
+    <span id="timer">Timer: <span id="timeRemaining">60</span> seconds</span>
+    <button id="restartButton" onclick="restartGame()">Restart</button>
+    <div id="history"></div>
+
+    <script src="./js/Js.js"></script>
 </body>
+
 </html>
