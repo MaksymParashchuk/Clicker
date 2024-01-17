@@ -6,8 +6,8 @@ body {
             margin: 0;
             background-image: url(../img/baground.jpg);
             background-image: url(./img/baground.jpg);
-            background-image: url(/img/baground.jpg);
-            background-image: url("./img/baground.jpg");
+            /* background-image: url(/img/baground.jpg); */
+            /* background-image: url("./img/baground.jpg"); */
             /* background-image: url("../img/baground.jpg");
             background-image: url("/img/baground.jpg"); */
         }
