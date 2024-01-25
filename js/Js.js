@@ -34,6 +34,28 @@ function setTimeTo10Seconds() {  // test butons 10 sec
         updateTimer();
     }
 }
+addTimeButton2.addEventListener('click', function () {
+    setTimeTo30Seconds();
+});
+
+
+function setTimeTo30Seconds() {  // test butons 10 sec
+    if (!timerRunning) {
+        timeRemaining = 31;
+        updateTimer();
+    }
+}
+addTimeButton3.addEventListener('click', function () {
+    setTimeTo1Minutes();
+});
+
+
+function setTimeTo1Minutes() {  // test butons 10 sec
+    if (!timerRunning) {
+        timeRemaining = 61;
+        updateTimer();
+    }
+}
 
 function changeButtonColor() {
     clickButton.style.backgroundColor = getRandomColor();
@@ -82,6 +104,7 @@ function restartGame() {
     updateClickCount();
     updateTimer();
 }
+
 
 1
 

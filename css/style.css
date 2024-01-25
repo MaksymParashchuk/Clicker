@@ -13,38 +13,32 @@ button {
     cursor: pointer;
 }
 
-/* .mode {
+.addTimeButtons {
     position: fixed;
-    top: 10px; 
-    left: 10px; 
+    top: 10px;
+    left: 10px;
     cursor: pointer;
-} */
- #addTimeButton1 {
-    position: fixed;
-    top: 10px; 
-    left: 10px; 
-    cursor: pointer;
-    padding: 15px; 
-    font-size: 15px; 
-    cursor: pointer;
-    background-color: green;
 }
 
-.mode .button2 {
-    padding: 15px; 
-    font-size: 15px; 
+#addTimeButton1 {
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: red;
+}
+
+#addTimeButton2 {
+    padding: 15px;
+    font-size: 15px;
     cursor: pointer;
     background-color: yellow;
 }
-
-.mode .button3 {
-    padding: 15px; 
-    font-size: 15px; 
+#addTimeButton3 {
+    padding: 15px;
+    font-size: 15px;
     cursor: pointer;
-    background-color: red;
-
+    background-color: green;
 }
-
 
 #timer {
     position: fixed;
