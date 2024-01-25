@@ -11,9 +11,18 @@
 
 <body>
     <button onclick="handleClick()">Click me: <span id="clickCount">0</span></button>
+    <div class="btn">
+    <button id="addTimeButton1">Add 10 Seconds</button>
+    </div>
+
+
     <span id="timer">Timer: <span id="timeRemaining">60</span> seconds</span>
     <button id="restartButton" onclick="restartGame()">Restart</button>
     <div id="history"></div>
+    <div id="endGameModal" class="modal">
+        <div id="modalContent" class="modal-content"></div>
+    </div>
+
 
     <script src="./js/Js.js"></script>
 </body>

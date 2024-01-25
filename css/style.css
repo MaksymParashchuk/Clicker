@@ -1,39 +1,72 @@
 body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-image: url(../img/baground.jpg);
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../img/baground.jpg);
+}
 
-        button {
-            padding: 25px;
-            font-size: 30px;
-            cursor: pointer;
-        }
+button {
+    padding: 25px;
+    font-size: 30px;
+    cursor: pointer;
+}
 
-        #timer {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            font-size: 30px;
-            color: white;
-        }
+/* .mode {
+    position: fixed;
+    top: 10px; 
+    left: 10px; 
+    cursor: pointer;
+} */
+ #addTimeButton1 {
+    position: fixed;
+    top: 10px; 
+    left: 10px; 
+    cursor: pointer;
+    padding: 15px; 
+    font-size: 15px; 
+    cursor: pointer;
+    background-color: green;
+}
 
-        #restartButton {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            padding: 15px;
-            font-size: 20px;
-            cursor: pointer;
-        }
+.mode .button2 {
+    padding: 15px; 
+    font-size: 15px; 
+    cursor: pointer;
+    background-color: yellow;
+}
 
-        #history {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-            font-size: 30px;
-            color: white;
-        }
+.mode .button3 {
+    padding: 15px; 
+    font-size: 15px; 
+    cursor: pointer;
+    background-color: red;
+
+}
+
+
+#timer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+#restartButton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#history {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: white;
+}
