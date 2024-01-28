@@ -10,20 +10,26 @@ let timeRemaining = 60;
 let timerRunning = false;
 let intervalId;
 let gameHistory = [];
+let hardModeEnabled = false;
 
-// function handleClick() {
-//     if (!timerRunning) {
-//         updateTimer();
-//         intervalId = setInterval(updateTimer, 1000);
-//         timerRunning = true;
-//     }
+function handleClick() {
+    if (!timerRunning) {
+        updateTimer();
+        intervalId = setInterval(updateTimer, 1000);
+        timerRunning = true;
+    }
 
-//     clicks++;
-//     updateClickCount();
-//     changeButtonColor();
-// }
+    clicks++;
+    updateClickCount();
+    changeButtonColor();
 
+    if (hardModeEnabled) {
+        // дає можливість переміщати кнопку клік на рандомне місце якщо функція хард уввімкнена
+        setRandomPosition();
+    }
+}
 
+// кнопки з секундами в нав барі
 addTimeButton1.addEventListener('click', function () {
     setTimeTo10Seconds();
 });
@@ -57,6 +63,7 @@ function setTimeTo1Minutes() {
     }
 }
 
+// рандомний колір основної кнопки клік
 function changeButtonColor() {
     clickButton.style.backgroundColor = getRandomColor();
 }
@@ -120,11 +127,11 @@ function updateHistory() {
         }
     }
 
-    // Виберіть конкретні властивості об'єкта для виведення
+    // тут можна обрати що ми хочемо виводити в історії збереження на основній сторінці
     const historyMessages = gameHistory.slice(0, 5).map(entry => `${entry.playerName}: scored ${entry.score}`);
     historyElement.innerHTML = "History: " + historyMessages.join(', ');
 }
-
+// рестарт гри зазначено 61 секунда тому що якщо ставити 60 секунд то таймер після рестарту обнуляється до 59 секунд
 function restartGame() {
     clicks = 0;
     timeRemaining = 61;
@@ -133,61 +140,30 @@ function restartGame() {
     updateClickCount();
     updateTimer();
 
-    // Отримайте розміри вікна
+    // розміри вікна
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
 
-    // Отримайте розміри кнопки "click"
+    //розміри кнопки click
     const buttonWidth = clickButton.offsetWidth;
     const buttonHeight = clickButton.offsetHeight;
 
-    // Розмістіть кнопку по центру екрану
+    // розміщення кнопки 
     clickButton.style.position = 'absolute';
     clickButton.style.left = (windowWidth - buttonWidth) / 2 + 'px';
     clickButton.style.top = (windowHeight - buttonHeight) / 2 + 'px';
-
-    // Додайте додатковий код, якщо потрібно
 }
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-
-let hardModeEnabled = false;
-
-// Додайте це в коді, щоб вказати, що "hard mode" увімкнено або вимкнено
+// функція яка показує чи активна кнопка хард мод чи не активна
 const hardModeButton = document.getElementById('hardModeButton');
 hardModeButton.addEventListener('click', toggleHardMode);
 
 function toggleHardMode() {
     hardModeEnabled = !hardModeEnabled;
     if (hardModeEnabled) {
-        // Тут можна додати відповідні стилі чи зміни для позначення увімкнення "hard mode"
         hardModeButton.style.backgroundColor = 'red';
     } else {
-        // Стилі чи зміни для вимкнення "hard mode"
         hardModeButton.style.backgroundColor = 'white';
-    }
-}
-
-function handleClick() {
-    if (!timerRunning) {
-        updateTimer();
-        intervalId = setInterval(updateTimer, 1000);
-        timerRunning = true;
-    }
-
-    clicks++;
-    updateClickCount();
-    changeButtonColor();
-
-    if (hardModeEnabled) {
-        // Додайте функціонал для зміни рандомного розташування кнопки у "hard mode"
-        setRandomPosition();
     }
 }
 
@@ -203,22 +179,19 @@ function setRandomPosition() {
     let randomX = Math.floor(Math.random() * (windowWidth - buttonWidth));
     let randomY = Math.floor(Math.random() * (windowHeight - buttonHeight));
 
-    // Перевірка, щоб не виходити за межі праворуч
+    // забороняє вихід за межі сторінки
     if (randomX + buttonWidth > windowWidth) {
         randomX = windowWidth - buttonWidth;
     }
 
-    // Перевірка, щоб не виходити за межі знизу
     if (randomY + buttonHeight > windowHeight) {
         randomY = windowHeight - buttonHeight;
     }
 
-    // Перевірка, щоб не виходити за межі зліва
     if (randomX < 0) {
         randomX = 0;
     }
 
-    // Перевірка, щоб не виходити за межі зверху
     if (randomY < 0) {
         randomY = 0;
     }
@@ -227,4 +200,13 @@ function setRandomPosition() {
     clickButton.style.position = 'absolute';
     clickButton.style.left = randomX + 'px';
     clickButton.style.top = randomY + 'px';
+}
+
+//відкриття закриття навігаційної панелі
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }
