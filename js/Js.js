@@ -1,3 +1,4 @@
+// ці змінні представляють посилання на елементи HTML
 const clickButton = document.querySelector('button');
 const clickCountElement = document.getElementById('clickCount');
 const timerElement = document.getElementById('timeRemaining');
@@ -5,6 +6,7 @@ const restartButton = document.getElementById('restartButton');
 const historyElement = document.getElementById('history');
 const addTimeButtons = document.getElementById('addTimeButtons');
 
+// ці змінні представляють стан гри та конфігурації гравця в коді
 let clicks = 0;
 let timeRemaining = 60;
 let timerRunning = false;
@@ -12,6 +14,7 @@ let intervalId;
 let gameHistory = [];
 let hardModeEnabled = false;
 
+// відповідає за обробку кліків на кнопці гри
 function handleClick() {
     if (!timerRunning) {
         updateTimer();
