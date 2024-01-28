@@ -11,20 +11,22 @@
 
 <body>
     <button onclick="handleClick()">Click me: <span id="clickCount">0</span></button>
-    <div class="addTimeButtons">
-        <button id="addTimeButton3">1 Minutes</button>
-        <button id="addTimeButton2">30 Seconds</button>
-        <button id="addTimeButton1">10 Seconds</button>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button id="addTimeButton1" class="color-change-button">10 seconds</button>
+        <button id="addTimeButton2" class="color-change-button">30 seconds</button>
+        <button id="addTimeButton3" class="color-change-button">1 minute</button>
+        <button id="hardModeButton">Hard Mode</button>
     </div>
-
+    <div class="buttonNav">
+        <span onclick="openNav()">☰ Game mode</span>
+    </div>
     <span id="timer">Timer: <span id="timeRemaining">60</span> seconds</span>
     <button id="restartButton" onclick="restartGame()">Restart</button>
     <div id="history"></div>
     <div id="endGameModal" class="modal">
         <div id="modalContent" class="modal-content"></div>
     </div>
-
-
     <script src="./js/Js.js"></script>
 </body>
 

@@ -13,31 +13,35 @@ button {
     cursor: pointer;
 }
 
-.addTimeButtons {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    cursor: pointer;
-}
-
 #addTimeButton1 {
     padding: 15px;
     font-size: 15px;
     cursor: pointer;
-    background-color: red;
+    background-color: white;
+    margin: 10px;
 }
 
 #addTimeButton2 {
     padding: 15px;
     font-size: 15px;
     cursor: pointer;
-    background-color: yellow;
+    background-color: white;
+    margin: 10px;
 }
+
 #addTimeButton3 {
     padding: 15px;
     font-size: 15px;
     cursor: pointer;
-    background-color: green;
+    background-color: white;
+    margin: 10px;
+}
+#hardModeButton {
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+    margin: 150px 10px 10px 10px;
 }
 
 #timer {
@@ -64,3 +68,61 @@ button {
     font-size: 30px;
     color: white;
 }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.buttonNav {
+    font-size: 30px;
+    cursor: pointer;
+    top: 10px;
+    position: fixed;
+    left: 10px;
+    color: white;
+}
+
+
+/* .addTimeButtons {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+} */
